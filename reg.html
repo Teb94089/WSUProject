@@ -1,0 +1,243 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Registration form</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+			 <body onload="startTime()">
+		  <header id="header">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			
+				          </li>						  
+			            </ul>
+			          </li>					          					          		          
+			         
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->	
+<br>
+<fieldset>
+
+<div class="form1" style="background-color:  #7a4964">
+
+<br><h3><center><u>Registration Form</u></center></h3>		  
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="Regconnection.php" name="form" onsubmit="return validateForm()" method="post">
+
+<table cellpadding="2" width="50%" bgcolor="" align="center"
+cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=4><b></b></font></center>
+</td>
+</tr>
+
+</tr>
+
+
+<tr>
+<td>Student Number</td>
+<td><input type="text" name="txtStud" id="txtStud" size="40"></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="txtFName" id="txtFName" size="40"></td>
+</tr>
+
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="txtLName" id="txtLName" size="40"></td>
+</tr>
+<tr>
+<td>ID Number</td>
+<td><input type="text" name="txtID" id="txtID" size="40"></td>
+</tr>
+<tr>
+<td> Residential Address</td>
+<td><textarea col="50" name="txtAddress" ></textarea></td>
+</tr>
+<tr>
+<td> Postal Address</td>
+<td><textarea col="50" name="txtPostal" ></textarea></td>
+</tr>
+  <br>
+
+<tr>
+<td>Contact Details</td>
+<td><input type="text" name="txtContact" id="txtContact" size="40"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="g" value="Female" size="10">Female
+<input type="radio" name="g" value="Male" size="10">Male</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td><input type="text" name="txtEmail" id="txtEmail" size="40"></td>
+</tr>
+
+<tr>
+<td>Program Registering For:</td><br>
+<td><select id="txtRegistration" name="txtRegistration">
+<option value="" selected>Qualification</option>
+<!--DEPARTMENT OF DEPARTMENT OF Accounting and Finance</-->
+<option value="N Dip: Cost & Management Accounting">N Dip: Cost & Management Accounting</option>
+<option value="N Dip: Financial Information Systems">N Dip: Financial Information Systems</option>
+<option value="N Dip: Internal Auditing">N Dip: Internal Auditing</option>
+<option value="N H Cert: Accountancy">N H Cert: Accountancy</option>
+<option value="N H Cert: Accountancy (ECP)">N H Cert: Accountancy (ECP)</option>
+<option value="N H Cert: Financial Information Systems">N H Cert: Financial Information Systems</option>
+<!--DEPARTMENT OF Corporate Com.& Marketing</-->
+
+<option value="N Cert: Versatile Broadcasting">N Cert: Versatile Broadcasting</option>
+<option value="N Dip: Journalism">N Dip: Journalism</option>
+<option value="N Dip: Marketing">N Dip: Marketing</option>
+<option value="N Dip: Public Relations Management">N Dip: Public Relations Management</option>
+<option value="N Dip: Public Relations Management (ECP)">N Dip: Public Relations Management (ECP)</option>
+<!--DEPARTMENT OF Management and Governance</-->
+<option value="N Dip: Local Government Finance">N Dip: Local Government Finance</option>
+<option value="N Dip: Local Government Finance (ECP)">N Dip: Local Government Finance (ECP)</option>
+<option value="N Dip: Management">N Dip: Management</option>
+<option value="N Dip: Management (ECP)">N Dip: Management (ECP)</option>
+<option value="N Dip: Policing">N Dip: Policing</option>
+<option value="N Dip: Public Management">N Dip: Public Management</option>
+<option value="N Dip: Small Business Management">N Dip: Small Business Management</option>
+<!--DEPARTMENT OF People's Dev and Technology</-->
+<option value="Dip in Human Resources Management">Dip in Human Resources Management</option>
+<option value="N Dip: Administration Management:General">N Dip: Administration Management:General</option>
+<option value="N Dip: Office Management & Technology">N Dip: Office Management & Technology</option>
+<!--DEPARTMENT OF Tourism, Hosp.& Sports Mgnt</-->
+<option value="N Dip: Hospitality Management">N Dip: Hospitality Management</option>
+<option value="N Dip: Sport Management">N Dip: Sport Management</option>
+<option value="N Dip: Tourism Management">N Dip: Tourism Management</option>
+<!--DEPARTMENT OF Applied Sciences</-->
+<option value="N Dip: Analytical Chemistry">N Dip: Analytical Chemistry</option>
+<option value="N Dip: Analytical Chemistry (ECP)">N Dip: Analytical Chemistry (ECP)</option>
+<option value="N Dip:Consumer Science: Food & Nutrition">N Dip:Consumer Science: Food & Nutrition</option>
+<option value="N Dip: Consumer Sci: Food & Nutrit (ECP)">N Dip: Consumer Sci: Food & Nutrit (ECP)</option>
+<!--DEPARTMENT OF Built Environment</-->
+<option value="N Dip: Building">N Dip: Building</option>
+<option value="N Dip: Building (ECP)">N Dip: Building (ECP)</option>
+<!--DEPARTMENT OF Civil Engineering</-->
+<option value="N Dip: Engineering: Civil">MN Dip: Engineering: Civil</option>
+<option value="N Dip: Engineering: Civil (ECP)">N Dip: Engineering: Civil (ECP)</option>
+<!--DEPARTMENT OF Electrical Engineering</-->
+<option value="N Dip: Engineering: Electric (ECP)">N Dip: Engineering: Electric (ECP)</option>
+<option value="N Dip: Engineering: Electrical">N Dip: Engineering: Electrical</option>
+<!--DEPARTMENT OF Information Technology</-->
+<option value="Dip in ICT in Applications Develop (ECP)">Dip in ICT in Applications Develop (ECP)</option>
+<option value="Dip in ICT in Applications Development">Dip in ICT in Applications Development</option>
+<option value="Dip in ICT in Business Analysis">Dip in ICT in Business Analysis</option>
+<option value="Dip in ICT in Business Analysis (ECP)">Dip in ICT in Business Analysis (ECP)</option>
+<option value="Dip in ICT in Comm Networks">Dip in ICT in Comm Networks</option>
+<option value="Dip in ICT in Comm Networks (ECP)">Dip in ICT in Comm Networks (ECP)</option>
+<option value="Dip in ICT in Support Services">Dip in ICT in Support Services</option>
+<option value="Dip in ICT in Support Services (ECP)">Dip in ICT in Support Services (ECP)</option>
+<option value="N Dip: Information Technology">N Dip: Information Technology</option>
+<option value="N Dip: Information Technology (ECP)">N Dip: Information Technology (ECP)</option>
+<!--DEPARTMENT OF Engineering: Mechanical</-->
+
+<option value="N Dip: Engineering: Mechanical">N Dip: Engineering: Mechanical</option>
+<option value="N Dip: Engineering: Mechanical (ECP)">N Dip: Engineering: Mechanical (ECP)</option>
+
+<!--DEPARTMENT OF Visual Arts</-->
+<option value="N Dip: Fashion">N Dip: Fashion</option>
+<option value="N Dip: Fine Art">N Dip: Fine Art</option>
+
+</selected>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset id="fs2">
+<legend>Modules:</legend>
+<div class="form1">
+
+<input type="checkbox" name="Modules[]" value="Technical Programming I" tabindex="1"/>Technical Programming I<br/>
+<input type="checkbox" name="Modules[]" value="Technical Programming II" tabindex="1"/>Technical Programming II<br/>
+<input type="checkbox" name="Modules[]" value="Development Software I" tabindex="1"/>Development Software I<br/>
+<input type="checkbox" name="Modules[]" value="Development Software II" tabindex="1"/>Development Software II<br/>
+<input type="checkbox" name="Modules[]" value="Development Software III" tabindex="1"/>Development Software III<br/>
+<input type="checkbox" name="Modules[]" value="Information Systems I" tabindex="1"/>Information Systems I<br/>
+<input type="checkbox" name="Modules[]Information Systems II" value="Information Systems II" tabindex="1"/>Information Systems II<br/>
+<input type="checkbox" name="Modules[]" value="Information Systems III" tabindex="1"/>Information Systems III<br/>
+<div class="form">
+<input type="checkbox" name="Modules[]" value="Graphical User Interface Design" tabindex="1"/>Graphical User Interface Design<br/>
+<input type="checkbox" name="Modules[]" value="System Software I" tabindex="1"/>System Software I<br/>
+<input type="checkbox" name="Modules[]" value="System Software II" tabindex="1"/>System Software II<br/>
+<input type="checkbox" name="Modules[]" value="Information Technology Skills" tabindex="1"/>Information Technology Skills<br/>
+<input type="checkbox" name="Modules[]" value="Support Services I" tabindex="1"/>Support Services I<br/>
+<input type="checkbox" name="Modules[]" value="Support Services II" tabindex="1"/>Support Services II<br/>
+</div>
+<input type="checkbox" name="Modules[]" value="Communication networks II" tabindex="1"/>Communication networks II<br/>
+<input type="checkbox" name="Modules[]" value="Communication networks III" tabindex="1"/>Communication networks III<br/>
+<input type="checkbox" name="Modules[]" value="Distributed Systems I" tabindex="1"/>Distributed Systems I<br/>
+<input type="checkbox" name="Modules[]" value="Distributed Systems II" tabindex="1"/>Distributed Systems II<br/>
+<input type="checkbox" name="Modules[]" value="Information Technology Electronics I" tabindex="1"/>Information Technology Electronics I<br/>
+<input type="checkbox" name="Modules[]" value="Information Technology Electronics II" tabindex="1"/>Information Technology Electronics II<br/>
+<input type="checkbox" name="Modules[]" value="Applied Statistics II" tabindex="1"/>Applied Statistics II<br/>
+<input type="checkbox" name="Modules[]" value="Business Analysis II" tabindex="1"/>Business Analysis II<br/>
+<input type="checkbox" name="Modules[]" value="Business Analysis III" tabindex="1"/>Business Analysis III<br/>
+<input type="checkbox" name="Modules[]" value="Business Accounting I" tabindex="1"/>Business Accounting I<br/>
+<input type="checkbox" name="Modules[]" value="Enterprise System Technology III" tabindex="1"/>Enterprise System Technology III<br/>
+<input type="checkbox" name="Modules[]" value="Management Information System III" tabindex="1"/>Management Information System III<br/>
+
+</div>
+<br />
+</fieldset>
+</td>
+</tr>
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="REGISTER" /></td>
+</tr>
+</table>
+</div>
+<br />
+</fieldset>
+
+</form>
+</body>
+<br>		  
+<br>
+<br>		  
+<br>
+<br>		  
+<br>

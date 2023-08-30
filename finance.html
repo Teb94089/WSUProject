@@ -1,0 +1,97 @@
+<HTML>
+<head>
+<title>WSU</title>
+<link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+
+<style>
+
+    table {
+      width: 40%;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    td {
+      padding: 5px;
+    }
+  
+    select, input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  
+    input[type="submit"], input[type="reset"] {
+      background-color: #7a4964;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #5d3650;
+    }
+  </style>
+
+
+
+
+<center><h2><u>FINANCE FORM</u></h2></center>
+
+<body>
+<div class ="navbar">
+<ul>
+ <form action="financeconnection3.php" name="form" onsubmit="return validate()" method="post">
+
+<table cellpadding="1" width="10%" height="50%" background: #7a4964;>
+
+<tr>
+<td colspan=2>
+</td>
+</tr>
+<tr>
+<td>STATEMENT TYPE</td>
+<td><select id="txtTitle" name="txtStatementType">
+<option value="" selected></option>
+<option value="nsfas">NSFAS</option>
+<option value="buesary">BURSARY</option>
+<option value="FEE">SELF PAYER</option>
+</select></td>
+</tr>
+<tr>
+<td>DATE OF BALANCE</td>
+<td><input type="text" name="txtDateOfBalance" id="txtDateOfBalance" size="40"></td>
+</tr>
+
+<tr>
+<td>DEBIT AMOUNT</td>
+<td><input type="text" name="txtDebitAmount" id="txtDebitAmount" size="40"></td>
+</tr>
+<tr>
+<td>CREDIT AMOUNT</td>
+<td><input type="text" name="txtCreditAmount" id="txtCreditAmount" size="40"></td>
+</tr>
+
+<tr>
+<td>BALANCE</td><td><input type="text" name="txtBalance" id="txtBalance" size="40"></td></tr>
+
+
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="SUBMIT" /></td>
+</tr>
+</table>
+</form>
+
+
+</HTML>

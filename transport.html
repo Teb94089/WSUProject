@@ -1,0 +1,129 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>TRANSPORT form</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+			
+		  <header id="header">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			
+				          </li>						  
+			            </ul>
+			          </li>					          					          		          
+			         
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->	
+<br>
+<center><h2><u>TRANSPORT FORM</u></h2></center>
+
+<fieldset>
+
+<div class="form1" style="background-color: #7a4964 ;">
+
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="connectionTransport.php" onsubmit="return validateForm()" method="post">
+
+<table cellpadding="2" width="30%" 
+cellspacing="2">
+
+<tr>
+<td>Student Number </td>
+<td><input type="text" name="txtStudentNumber" id="txtStudentNumber" size="40"></td>
+</tr>
+<tr>
+<td>ID Number</td>
+<td><input type="text" name="txtIDNumber" id="txtIDNumber" size="40"></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="txtFirstName" id="txtFirstName" size="40"></td>
+</tr>
+
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="txtLastName" id="txtLastName" size="40"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="g" value="yes" size="10">Female
+<input type="radio" name="g" value="no" size="10">Male</td>
+</tr>
+<tr>
+<td>Qualification</td>
+<td><input type="textQualification" name="txtQualification" id="txtQualification" size="40"></td>
+</tr>
+<td>Accomodation</td>
+<td><select id="txtAccomodation" name="txtAccomodation">
+<option value="" selected>select here </option>
+<option value="Non-res" >Non-res</option>
+<option value="Res">Res</option>
+</select></td>
+<tr>
+<td>Delivery Site</td>
+<td><select id="txtDeliverySite" name="txtDeliverySite">
+<option value="" selected>select here </option>
+<option value="potsdam" >potsdam</option>
+<option value="chislehurst">chislehurst</option>
+</select></td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td><input type="text" name="txtEmailAddress" id="txtEmailAddress" size="40"></td>
+</tr>
+<tr>
+<td>Contact Details</td>
+<td><input type="text" name="txtContactDetails" id="txtContactDetails" size="40"></td>
+</tr>
+
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="submit" /></td>
+</tr>
+
+</table>
+</div>
+<br />
+</fieldset>
+
+</form>
+
+</body>
+ 

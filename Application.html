@@ -1,0 +1,518 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Styles.css">
+
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- Load font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Responsive topnav-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  
+  
+  
+  
+  
+  <header>
+    <h1 class="site-logo">WALTER SISULU UNIVERSITY</h1>
+      
+  </head>
+  </head>
+  <body>
+    <body>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Application Subsystem<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+          <a href="Application.html">Application Form </a>
+          </div>
+        </div> 
+    
+        <div class="dropdown">
+          <button class="dropbtn">Registration Subsystem <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="LoginForm.html">Log in </a>
+            <a href="registration.html">Registration Form</a>
+          </div>
+          </div> 
+    
+          <div class="dropdown">
+          <button class="dropbtn">Residence Subsystem <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="LoginForm.html">Log in</a>
+            <a href="residentForm.html">Accomodation Form</a>
+          </div>
+          </div> 
+    
+          <div class="dropdown">
+          <button class="dropbtn">Finance Subsystem <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="LoginForm.html">Log in </a>
+            <a href="financeForm.html">Finance Form</a>
+        
+          </div>
+          </div> 
+    
+          <div class="dropdown">
+          <button class="dropbtn">Transport Subsystem <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="LoginForm.html">Log in</a>
+            <a href="transportForm.html">Transport Form</a>
+          </div>
+          </div> 
+        
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        
+        
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+        }
+        </script>
+        
+        <style>
+          body {
+            font-size: 12px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+	          background-color: #f2f2f2;
+	          text-align: center;
+	          margin: 0;
+	          padding: 0;
+          }
+          .rightBar {
+            display: none;
+          }
+          .leftBar {
+            margin: auto;
+            width: 80%;
+            background-color: #f9f9f9;
+            padding: 10px;
+          }
+          h4 {
+            margin: 0;
+            padding: 5px;
+          }
+          fieldset {
+            background-color: #f9f9f9;
+            border: 2px solid #7a4964;
+            padding: 10px;
+            margin: 10px 0;
+          }
+          select, input, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+          }
+          input[type="radio"] {
+            transform: scale(0.8);
+            margin-right: 5px;
+          }
+          #btsub {
+            margin-top: 10px;
+            padding: 5px 15px;
+            background-color: #7a4964;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+        </style>
+
+</head>
+<body >
+
+     </ul>
+    </li>
+</ul>
+</div>
+<div class="rightBar"></div>
+<div id="LB" class="leftBar"><br />
+  <center><h2><u>APPLICATION FORM</u></h2></center>
+<form action="Appconnection2.php" name="form" onsubmit="return validateForm()" method="post">
+
+
+<fieldset id="fs1" style="background-color: #7a4964">
+  <div class="form1" style="background-color: #7a4964">
+<legend>Student Details:</legend>
+
+<td>PROGRAM APPLYING FOR:</td><br>
+<tr>
+<td>FIRST CHOICE:</td>
+<td><select id="txtChoice1" name="txtChoice1">
+<!--DEPARTMENT OF COPORATE COM & MARKETING</-->
+<option value="" selected>Select here..</option>
+<option value="No1">N Dip: Cost & Management Accounting</option>
+<option value="no2">N Dip: Financial Information Systems</option>
+<option value="no3">N Dip: Internal Auditing</option>
+<option value="no4">N H Cert: Accountancy</option>
+<option value="N H Cert: Financial Information Systems">N H Cert: Financial Information Systems</option>
+<!--DEPARTMENT OF Corporate Com.& Marketing</-->
+
+<option value="N Cert: Versatile Broadcasting">N Cert: Versatile Broadcasting</option>
+<option value="N Dip: Journalism">N Dip: Journalism</option>
+<option value="N Dip: Marketing">N Dip: Marketing</option>
+<option value="N Dip: Public Relations Management">N Dip: Public Relations Management</option>
+<option value="N Dip: Public Relations Management (ECP)">N Dip: Public Relations Management (ECP)</option>
+<!--DEPARTMENT OF Management and Governance</-->
+<option value="N Dip: Local Government Finance">N Dip: Local Government Finance</option>
+<option value="N Dip: Local Government Finance (ECP)">N Dip: Local Government Finance (ECP)</option>
+<option value="N Dip: Management">N Dip: Management</option>
+<option value="N Dip: Management (ECP)">N Dip: Management (ECP)</option>
+<option value="N Dip: Policing">N Dip: Policing</option>
+<option value="N Dip: Public Management">N Dip: Public Management</option>
+<option value="N Dip: Small Business Management">N Dip: Small Business Management</option>
+<!--DEPARTMENT OF People's Dev and Technology</-->
+<option value="Dip in Human Resources Management">Dip in Human Resources Management</option>
+<option value="N Dip: Administration Management:General">N Dip: Administration Management:General</option>
+<option value="N Dip: Office Management & Technology">N Dip: Office Management & Technology</option>
+<!--DEPARTMENT OF Tourism, Hosp.& Sports Mgnt</-->
+<option value="N Dip: Hospitality Management">N Dip: Hospitality Management</option>
+<option value="N Dip: Sport Management">N Dip: Sport Management</option>
+<option value="N Dip: Tourism Management">N Dip: Tourism Management</option>
+<!--DEPARTMENT OF Applied Sciences</-->
+<option value="N Dip: Analytical Chemistry">N Dip: Analytical Chemistry</option>
+<option value="N Dip: Analytical Chemistry (ECP)">N Dip: Analytical Chemistry (ECP)</option>
+<option value="N Dip:Consumer Science: Food & Nutrition">N Dip:Consumer Science: Food & Nutrition</option>
+<option value="N Dip: Consumer Sci: Food & Nutrit (ECP)">N Dip: Consumer Sci: Food & Nutrit (ECP)</option>
+<!--DEPARTMENT OF Built Environment</-->
+<option value="N Dip: Building">N Dip: Building</option>
+<option value="N Dip: Building (ECP)">N Dip: Building (ECP)</option>
+<!--DEPARTMENT OF Civil Engineering</-->
+<option value="N Dip: Engineering: Civil">MN Dip: Engineering: Civil</option>
+<option value="N Dip: Engineering: Civil (ECP)">N Dip: Engineering: Civil (ECP)</option>
+<!--DEPARTMENT OF Electrical Engineering</-->
+<option value="N Dip: Engineering: Electric (ECP)">N Dip: Engineering: Electric (ECP)</option>
+<option value="N Dip: Engineering: Electrical">N Dip: Engineering: Electrical</option>
+<!--DEPARTMENT OF Information Technology</-->
+<option value="Dip in ICT in Applications Develop (ECP)">Dip in ICT in Applications Develop (ECP)</option>
+<option value="Dip in ICT in Applications Development">Dip in ICT in Applications Development</option>
+<option value="Dip in ICT in Business Analysis">Dip in ICT in Business Analysis</option>
+<option value="Dip in ICT in Business Analysis (ECP)">Dip in ICT in Business Analysis (ECP)</option>
+<option value="Dip in ICT in Comm Networks">Dip in ICT in Comm Networks</option>
+<option value="Dip in ICT in Comm Networks (ECP)">Dip in ICT in Comm Networks (ECP)</option>
+<option value="Dip in ICT in Support Services">Dip in ICT in Support Services</option>
+<option value="Dip in ICT in Support Services (ECP)">Dip in ICT in Support Services (ECP)</option>
+<option value="N Dip: Information Technology">N Dip: Information Technology</option>
+<option value="N Dip: Information Technology (ECP)">N Dip: Information Technology (ECP)</option>
+<!--DEPARTMENT OF Engineering: Mechanical</-->
+
+<option value="N Dip: Engineering: Mechanical">N Dip: Engineering: Mechanical</option>
+<option value="N Dip: Engineering: Mechanical (ECP)">N Dip: Engineering: Mechanical (ECP)</option>
+
+<!--DEPARTMENT OF Visual Arts</-->
+<option value="N Dip: Fashion">N Dip: Fashion</option>
+<option value="N Dip: Fine Art">N Dip: Fine Art</option>
+</select></td><br>
+</tr>
+<tr>
+<br><td>SECOND CHOICE: </td>
+<td><select id="txtChoice2" name="txtChoice2">
+<option value="" selected>Select here..</option>
+<!--DEPARTMENT OF COPORATE COM & MARKETING</-->
+<option value="" selected>Select here..</option>
+<option value="No1">N Dip: Cost & Management Accounting</option>
+<option value="no2">N Dip: Financial Information Systems</option>
+<option value="no3">N Dip: Internal Auditing</option>
+<option value="no4">N H Cert: Accountancy</option>
+<option value="N H Cert: Financial Information Systems">N H Cert: Financial Information Systems</option>
+<!--DEPARTMENT OF Corporate Com.& Marketing</-->
+
+<option value="N Cert: Versatile Broadcasting">N Cert: Versatile Broadcasting</option>
+<option value="N Dip: Journalism">N Dip: Journalism</option>
+<option value="N Dip: Marketing">N Dip: Marketing</option>
+<option value="N Dip: Public Relations Management">N Dip: Public Relations Management</option>
+<option value="N Dip: Public Relations Management (ECP)">N Dip: Public Relations Management (ECP)</option>
+<!--DEPARTMENT OF Management and Governance</-->
+<option value="N Dip: Local Government Finance">N Dip: Local Government Finance</option>
+<option value="N Dip: Local Government Finance (ECP)">N Dip: Local Government Finance (ECP)</option>
+<option value="N Dip: Management">N Dip: Management</option>
+<option value="N Dip: Management (ECP)">N Dip: Management (ECP)</option>
+<option value="N Dip: Policing">N Dip: Policing</option>
+<option value="N Dip: Public Management">N Dip: Public Management</option>
+<option value="N Dip: Small Business Management">N Dip: Small Business Management</option>
+<!--DEPARTMENT OF People's Dev and Technology</-->
+<option value="Dip in Human Resources Management">Dip in Human Resources Management</option>
+<option value="N Dip: Administration Management:General">N Dip: Administration Management:General</option>
+<option value="N Dip: Office Management & Technology">N Dip: Office Management & Technology</option>
+<!--DEPARTMENT OF Tourism, Hosp.& Sports Mgnt</-->
+<option value="N Dip: Hospitality Management">N Dip: Hospitality Management</option>
+<option value="N Dip: Sport Management">N Dip: Sport Management</option>
+<option value="N Dip: Tourism Management">N Dip: Tourism Management</option>
+<!--DEPARTMENT OF Applied Sciences</-->
+<option value="N Dip: Analytical Chemistry">N Dip: Analytical Chemistry</option>
+<option value="N Dip: Analytical Chemistry (ECP)">N Dip: Analytical Chemistry (ECP)</option>
+<option value="N Dip:Consumer Science: Food & Nutrition">N Dip:Consumer Science: Food & Nutrition</option>
+<option value="N Dip: Consumer Sci: Food & Nutrit (ECP)">N Dip: Consumer Sci: Food & Nutrit (ECP)</option>
+<!--DEPARTMENT OF Built Environment</-->
+<option value="N Dip: Building">N Dip: Building</option>
+<option value="N Dip: Building (ECP)">N Dip: Building (ECP)</option>
+<!--DEPARTMENT OF Civil Engineering</-->
+<option value="N Dip: Engineering: Civil">MN Dip: Engineering: Civil</option>
+<option value="N Dip: Engineering: Civil (ECP)">N Dip: Engineering: Civil (ECP)</option>
+<!--DEPARTMENT OF Electrical Engineering</-->
+<option value="N Dip: Engineering: Electric (ECP)">N Dip: Engineering: Electric (ECP)</option>
+<option value="N Dip: Engineering: Electrical">N Dip: Engineering: Electrical</option>
+<!--DEPARTMENT OF Information Technology</-->
+<option value="Dip in ICT in Applications Develop (ECP)">Dip in ICT in Applications Develop (ECP)</option>
+<option value="Dip in ICT in Applications Development">Dip in ICT in Applications Development</option>
+<option value="Dip in ICT in Business Analysis">Dip in ICT in Business Analysis</option>
+<option value="Dip in ICT in Business Analysis (ECP)">Dip in ICT in Business Analysis (ECP)</option>
+<option value="Dip in ICT in Comm Networks">Dip in ICT in Comm Networks</option>
+<option value="Dip in ICT in Comm Networks (ECP)">Dip in ICT in Comm Networks (ECP)</option>
+<option value="Dip in ICT in Support Services">Dip in ICT in Support Services</option>
+<option value="Dip in ICT in Support Services (ECP)">Dip in ICT in Support Services (ECP)</option>
+<option value="N Dip: Information Technology">N Dip: Information Technology</option>
+<option value="N Dip: Information Technology (ECP)">N Dip: Information Technology (ECP)</option>
+<!--DEPARTMENT OF Engineering: Mechanical</-->
+
+<option value="N Dip: Engineering: Mechanical">N Dip: Engineering: Mechanical</option>
+<option value="N Dip: Engineering: Mechanical (ECP)">N Dip: Engineering: Mechanical (ECP)</option>
+
+<!--DEPARTMENT OF Visual Arts</-->
+<option value="N Dip: Fashion">N Dip: Fashion</option>
+<option value="N Dip: Fine Art">N Dip: Fine Art</option>
+</select></td>
+<BR><br>
+SURNAME:<br> <input type="text" name="txtSurname">
+
+<br>
+FIRST NAME:<br>  <input type="text" name="txtName">
+
+<br>
+OTHER NAMES:<br>  <input type="text" name="txtOtherNames">
+<br>
+INITIALS:<br>  <input type="text" name="txtInitials">
+ID OR PASSPORT NUMBER:<br> <input type="text" name="txtIdentityPass">
+<br> 
+<br>
+DATE OF BIRTH:<br>  <input type="date" name="txtDateOfBirth">
+<br>
+<tr>
+<br>
+Gender<input type="radio" name="g" value="Female">FEMALE
+<input type="radio" name="g" value="MALE" >MALE</td>
+</tr>
+<br>
+
+
+RACE:<br> <select name="txtRace">
+<option value="" selected>Select..</option>
+<option value="African">African</option>
+  <option value="White">White</option>
+  <option value="Coloured">Coloured</option>
+  <option value="Other">Other</option>
+</select>
+<br>
+
+CITIZENSHIP:<br> <input type="text" name="txtCitizenship">
+<br>
+IF SA,INDICATE PROVINCE OF RESIDENCE:<br> <input type="text" name="txtSAPro">
+<br>
+PHYSICAL ADDRESS:<br> <textarea col="10" name="txtAddress"></textarea>
+<br>
+CITY/SUBURB:<br><input type="text" name="txtCitySuburb">
+<br>
+
+</br>
+</div>
+<div class="form" style="background-color: #7a4964">
+
+HOME TELEPHONE:HOME:<br><input type="text" name="txtTelephone">
+<br>
+
+LEARNER CELL:<br><input type="text" name="txtLearnerCell">
+<br>
+LEARNER EMAIL ADDRESS:<br><input type="text" name="txtEmail">
+<br>
+HOME LANGUAGE:<br><select name="txtHomeLang">
+<option value="" selected>Select..</option>
+<option value="Xhosa">Xhosa</option>
+  <option value="Sotho">Sotho</option>
+  <option value="Zulu">Zulu</option>
+  <option value="English">English</option>
+  <option value="Afrikaans">Afrikaans</option>
+  <option value="Tswana">Tswana</option>
+  <option value="Tsonga">Tsonga</option>
+  <option value="Swati">Swati</option>
+  <option value="Thsivenda">Tshivenda</option>
+  <option value="Sipedi">Sipedi</option>
+  <option value="Ndebele">Ndebele</option>
+  <option value="Other">Other</option>
+</select>
+
+
+
+RELIGION:<br><input type="text" name="txtReligion">
+</div>
+
+</fieldset>
+
+ <fieldset id="psi" class="sb" style="background-color: #7a4964">
+  <legend><h4>Previous School Information:</h4></legend>
+  Name of Previous School:<br> <input type="text" name="txtSchoolName">
+  <br>
+  Previous School Address:<br> <textarea col="30" name="txtSchoolAddress">
+  </textarea>
+  <br>
+  Code:<br><input type="text" size "5" name="txtCode"><br><br>
+  Province:<select name= "txtProvince">
+  <option value="">Select..</option>
+  <option value="Eastern cape">Eastern cape</option>
+  <option value="Western cape">Western cape</option>
+  <option value="Mpumalanga">Mpumalanga</option>
+  <option value="Kwazulu natal">Kwazulu natal</option>
+  <option value="Limpompo">Limpompo</option>
+  <option value="Guateng">Guateng</option>
+  <option value="Northern cape">Northern cape</option>
+  <option value="Free state">Free state</option>
+  <option value="North west">North west</option>
+</select><br />
+  Country:<br><input type="text" size "5" name="txtCountry">
+  </fieldset>  
+
+ 
+
+   
+    <fieldset id="pgi" class="sb" style="background-color: #7a4964">
+  <legend><h4>Parent/Gaudian Information:</h4></legend>
+  Title:<br>
+  <select name="txtTitlePar">
+  <option value="">Select..</option>
+   <option value="Mr">Mr</option>
+   <option value="Miss" >Miss</option>
+  <option value="Mrs">Mrs</option>
+  <option value="Mrs">Dr</option>
+</select>
+  <br>
+  Initials:<br> <input type="text" name="txtInitial"><br>
+  Surname:<br> <input type="text" name="txtSurnamePar">
+  <br>
+  First Name:<br> <input type="text" name="txtFname"><br>
+  <tr>
+  <br>
+<td>GENDER</td>
+<td><input type="radio" name="g" value="Female" size="10">FEMALE
+<input type="radio" name="g" value="Male" size="10">MALE</td>
+</tr>
+<br><br>
+   
+  Home Language : <select name="txtLanguage">
+  <option value="">Select..</option>
+   <option value="Xhosa">Xhosa</option>
+   <option value="Sotho" >Sotho</option>
+  <option value="Zulu">Zulu</option>
+  <option value="English">English</option>
+  <option value="Afrikaans">Afrikaans</option>
+  <option value="Tswana">Tswana</option>
+  <option value="Tsonga">Tsonga</option>
+  <option value="Swati">Swati</option>
+  <option value="Tshivenda">Tshivenda</option>
+  <option value="Sipedi">Sipedi</option>
+  <option value="Ndebele">Ndebele</option>
+  <option value="other">Other</option>
+</select>
+  <br><br>
+  Identification or Passport Number: <br><input type="text" name="txtIdentity" ><br><br>
+  
+  Residential Address:<br><textarea col="50" name="txtAddress" ></textarea>
+  <br>
+  City/Surburb:<br><input type="text" name="txtCityAdd"> <br>
+  Code:<br><input type="text"size="5" name="txtCodeAdd">
+  <br>
+  Occupation:   <br>     <input type="text" name="txtOccupation"><br>
+  
+  <br>
+   <br>
+  Marital Status<select name="txtMarital">
+   <option value="Single">Single</option>
+   <option value="married" >Married</option>
+  <option value="widowed">Widowed</option>
+ 
+</select>
+  </fieldset>
+
+ <fieldset id="psi"class="sb" style="background-color: #7a4964">
+<legend><h4>What are you doing this year:</h4></legend>
+<br>High school<input type="radio" name ="c" value="High" size="10"></br>
+ 
+  Studying University<input type="radio" name ="c" value="University" size="10"></br>
+ 
+ Studying College<input type="radio" name ="c" value="College" size="10"></br>
+ 
+ 
+ Nursing coollege<input type="radio" name ="c" value="Nursing" size="10"></br>
+ 
+ <br>Other, Specify<input type="text" name ="c" ><br/>
+
+<fieldset>
+ If the leaner is accepted,the following documents must be submittedto the school:
+<br>
+ 1.Copy of the Immunisation Records   
+ <br>
+ 2.Copy of Birth Certificate
+<br>
+3.Progress Report from Previous Information  
+<br>
+4.Transfer Letter from Previous School
+</fieldset>
+   <input type="submit" name="btnSubmit" value="Submit" id="btsub" height="100">
+</form>
+</div>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="footer"   style=   "background: #7a4964; padding:40px;">
+    <div class="small-print">
+    <div class="cont" style="text-align: center; color: #f2f2f2; font-size:12px;">
+      <p>Terms & Conditions</p> 
+      <p>Privacy & Policy</p>
+       <p>Follow us</p></p>
+       <div class="social" style="text-align: center;">
+        <a href="https://web.facebook.com/"><img src="facebook.png "  alt="Facebook" width="33px" height="33px"/></a>
+        <a href="https://www.instagram.com/?hl=en"> <img src="instagram.png" alt="" width="33px" height="32px"/></a>
+        <a href="https://twitter.com/i/flow/login"><img src="twitter.png" alt="" width="40px" height="43px"/></a>
+        
+       </div>
+       <p>Copyright © Yolanda 2019 </p></div>
+      </div>
+      </div>
+     
+  </footer>
+
+</html>

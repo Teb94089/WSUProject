@@ -1,0 +1,190 @@
+<html>
+<head>
+<link href="css/Styles.css" rel="stylesheet">
+<style>
+	body {
+	  font-family: Arial, sans-serif;
+	  background-color: #f2f2f2;
+	  text-align: center;
+	  margin: 0;
+	  padding: 0;
+	}
+  
+	.leftBar {
+	  margin: auto;
+	  width: 60%;
+	  background-color: white;
+	  padding: 20px;
+	  border-radius: 10px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+  
+	h2 {
+	  margin: 0;
+	  padding: 10px;
+	  color: #7a4964;
+	  text-decoration: underline;
+	}
+  
+	fieldset {
+	  border: 2px solid #7a4964;
+	  padding: 2px;
+	  margin: 30px 0;
+	  background-color: #f9f9f9;
+	}
+  
+	select, input, textarea {
+	  width: 100%;
+	  padding: 5px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  box-sizing: border-box;
+	  margin-bottom: 10px;
+	}
+  
+	input[type="radio"] {
+	  transform: scale(0.8);
+	  margin-right: 5px;
+	}
+  
+	input[type="submit"], input[type="reset"] {
+	  background-color: #7a4964;
+	  color: white;
+	  border: none;
+	  padding: 8px 16px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	}
+  
+	input[type="submit"]:hover, input[type="reset"]:hover {
+	  background-color: #5d3650;
+	}
+  </style>
+</head>
+<body >
+
+     </ul>
+    </li>
+</ul>
+</div>
+<div class="rightBar"></div>
+<div id="LB" class="leftBar"><br />
+<center><h2><u>RESIDENT FORM</u></h2></center>
+<form action="connection2.php" name="form" onsubmit= "return validate()" method="Post">
+
+<fieldset id="fs1" style="background: #7a4964;">
+<legend>STUDENT INFORMATION:</legend>
+<div class="form1">
+<tr>
+<BR>
+<BR>
+INITIALS: <BR><input type="text" name="txtInitials">
+<br>
+<br>
+SURNAME: <BR><input type="text" name="txtSur">
+<br>
+<br>
+FIRST NAME: <BR>  <input type="text" name="txtFname">
+<br>
+<br>
+OTHER NAMES: <BR> <input type="text" name="txtNames">
+<br>
+<br>
+DATE OF BIRTH: <BR>  <input type="date" name="txtDOB">
+<br>
+<br>
+<tr>
+<td>GENDER</td> <BR>
+<td><input type="radio" name="g" value="FEMALE" size="20">FEMALE
+<input type="radio" name="g" value="MALE" size="20">MALE</td>
+</tr>
+<BR>
+<BR>
+
+<td>RACE <BR></td>
+<td><select id="txtRace" name="txtRace">
+<option value="" selected>SELECT HERE</option>
+<option value="African">African</option>
+  <option value="White">White</option>
+  <option value="Coloured">Coloured</option>
+  <option value="Other">Other</option>
+</select>
+<br>
+<br>
+<tr>
+<td>ETHNICITY <BR></td>
+<td><select id="txtEthn" name="txtEthn">
+<option value="" selected>SELECT HERE</option>
+<option value="BLACK">BLACK</option>
+<option value="WHITE">WHITE</option>
+<option value="COLOURED">COLOURED</option>
+</select></td>
+<br>
+</tr>
+<td>CITIZENSHIP<BR></td>
+<td><select id="txtCitizen" name="txtCitizen">
+<option value="" selected>SELECT HERE</option>
+<option value="BLACK">South African</option>
+<option value="WHITE">Other</option>
+</select></td>
+</tr>
+<br>
+<br>
+PHYSICAL ADDRESS<BR> <textarea col="10" name="txtPhysical"></textarea>
+<br>
+<tr>
+CODE <BR><input type="text" name="txtCode">
+<br>
+<br>
+</tr>
+<tr>
+ Cellphone No<BR>  <input type="cell" name="txtCell">
+ <br>
+ <br>
+</tr>
+<td>
+<br>
+</div>
+<br/>
+
+</fieldset>
+</td>
+</tr>
+
+<BR>
+</select></td>
+
+</fieldset>
+
+ <fieldset id="psi" class="sb" style="background: #7a4964;">
+  <legend>NEXT OF KIN INFORMATION:</legend>
+<tr>
+<BR>
+<BR>
+INITIALS: <BR><input type="text" name="txtPinitials">
+<br>
+<br>
+SURNAME: <BR><input type="text" name="txtPsurname">
+<br>
+<br>
+FIRST NAME: <BR>  <input type="text" name="txtPfirst">
+<br>
+<br>
+DATE OF BIRTH: <BR>  <input type="date" name="txtPDOB">
+<br>
+<br>
+Cellphone No<BR>  <input type="cell" name="txtPCell">
+<br>
+<br>
+  </fieldset>  
+   </fieldset>
+   <input type="reset" name="btnReset" value="Reset"="btnReset" height="100">
+   <input type="submit" name="btnSubmit" value="Submit"="btsub" height="100">
+</form>
+</div>
+
+<script src="js/jquery.js"></script>
+
+</body>
+
+</html>

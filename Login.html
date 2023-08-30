@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center><h2><u>LOGIN FORM</u></h2></center>
+
+
+<fieldset>
+
+<div class="form1" style="background: #7a4964;">
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+
+<form action="connection.php" name="form" onsubmit="return validateForm()" method="post">
+
+<table cellpadding="2" width="50%" bgcolor="" align="center" cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=4><b></b></font></center>
+</td>
+</tr>
+
+</tr>
+	<tr>		<td>Registered users<br><br>
+	<input type="radio" name="PERIOD" value="STUDENT" CHECKED> Student		
+<input type="radio" name="PERIOD" value="PERSONNEL" CHECKED> Personnel
+<input type="radio" name="PERIOD" value="OTHER" CHECKED> Other
+<input type="radio" name="PERIOD" value="ALUMNI" CHECKED> Alumni<br><br></td>
+</tr>
+
+<tr>
+<td>Student Number:</td>
+<td><input type="text" name="txtStudNum" id="txtStudNum" size="40"></td>
+</tr>
+<tr>
+<td>Pin</td>
+<td><input type="text" name="txtPin" id="txtPin" size="40"></td>
+</tr>
+<tr><td>
+<input type="submit" value="Login">
+<input type="submit" value="Forgot Pin">
+<input type="submit" value="Change Pin">
+<input type="submit" value="Request Pin">
+<br><br></td>
+</tr>
+
+</div>
+<br />
+</fieldset>
+</td>
+</tr>
+</body>
+
